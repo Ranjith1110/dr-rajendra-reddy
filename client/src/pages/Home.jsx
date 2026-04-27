@@ -4,6 +4,8 @@ import IndexHome from '../components/home/IndexHome'
 import AboutDoctor from '../components/home/AboutDoctor'
 import ServicesTreatments from '../components/home/ServicesTreatments'
 import EventParticipation from '../components/home/EventParticipation'
+import ProfessionalExperience from '../components/home/ProfessionalExperience'
+import Footer from '../components/Footer'
 
 const Home = () => {
     return (
@@ -13,6 +15,8 @@ const Home = () => {
             <AboutDoctor />
             <ServicesTreatments />
             <EventParticipation />
+            <ProfessionalExperience />
+            <Footer />
         </>
     )
 }
