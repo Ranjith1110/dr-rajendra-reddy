@@ -23,7 +23,7 @@ const ServicesTreatments = () => {
         {
             title: "Endoscopic Spine Surgery",
             desc: "Advanced keyhole procedures with minimal tissue damage. Experience dramatically faster recovery times for slip disc and decompression treatments.",
-            image: "https://images.unsplash.com/photo-1551076805-e18690c5e53b?q=80&w=800&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop",
             gradient: "from-[#14B8A6] to-[#0D9488]"
         },
         {
