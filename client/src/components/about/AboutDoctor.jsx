@@ -227,10 +227,7 @@ const AboutDoctor = () => {
                 >
                     {/* Header Group */}
                     <div className="mb-5 md:mb-8 text-center md:text-left flex flex-col items-center md:items-start">
-                        <div ref={addToTextRefs} className="inline-flex items-center gap-1.5 md:gap-2 text-[#14B8A6] font-bold tracking-widest text-[9px] md:text-xs uppercase mb-2 md:mb-3 bg-[#14B8A6]/10 px-3 md:px-4 py-1 md:py-1.5 rounded-full">
-                            <FiActivity size={12} className="md:w-3.5 md:h-3.5" /> Lead Surgeon
-                        </div>
-                        <h2 ref={addToTextRefs} className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black text-[#0A192F] tracking-tight leading-[1.1] mb-1.5 md:mb-3">
+                        <h2 ref={addToTextRefs} className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl block font-serif font-black italic tracking-tight leading-[1.1] mb-1.5 md:mb-3">
                             Dr. Rajendra <span className="text-[#14B8A6]">Reddy</span>
                         </h2>
                         <h3 ref={addToTextRefs} className="text-sm md:text-xl text-slate-500 font-medium tracking-wide">

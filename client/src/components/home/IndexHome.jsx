@@ -73,7 +73,7 @@ const IndexHome = () => {
                     {/* Main Headline */}
                     <h1
                         ref={addToRefs}
-                        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.15] md:leading-[1.1] mb-5 md:mb-6"
+                        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl block font-serif font-black italic text-white tracking-tight leading-[1.15] md:leading-[1.1] mb-5 md:mb-6"
                     >
                         Relieve Pain. <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2DD4BF] to-[#0D9488]">

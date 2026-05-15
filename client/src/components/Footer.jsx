@@ -52,10 +52,9 @@ const Footer = () => {
 
     const quickLinks = [
         { name: "Home", href: "#" },
-        { name: "About Dr. Reddy", href: "#about" },
+        { name: "About Doctor", href: "#about" },
         { name: "Spine Treatments", href: "#services" },
-        { name: "Global Expertise", href: "#events" },
-        { name: "Hospital Affiliations", href: "#experience" }
+        { name: "Contact Us", href: "#contact" },
     ];
 
     const hospitals = [

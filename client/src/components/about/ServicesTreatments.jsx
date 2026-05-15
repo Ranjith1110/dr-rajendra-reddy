@@ -135,11 +135,7 @@ const ServicesTreatments = () => {
                 ========================================= */}
                 <div className="hidden md:flex md:w-[45%] sticky top-0 h-screen flex-col justify-center items-start pr-12 lg:pr-20">
 
-                    <div className="inline-flex items-center gap-2 text-[#14B8A6] font-bold tracking-[0.2em] text-[10px] uppercase mb-5 bg-[#14B8A6]/10 px-4 py-2 rounded-full">
-                        <FiActivity size={14} /> Medical Excellence
-                    </div>
-
-                    <h2 className="text-4xl lg:text-6xl font-black text-[#0A192F] tracking-tight mb-12 leading-[1.1]">
+                    <h2 className="text-4xl lg:text-6xl block font-serif font-black italic tracking-tight mb-12 leading-[1.1]">
                         Future-Ready <br />
                         <span className="text-[#14B8A6]">Spine Care.</span>
                     </h2>

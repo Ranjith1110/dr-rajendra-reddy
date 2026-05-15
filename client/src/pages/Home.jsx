@@ -1,22 +1,24 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import IndexHome from '../components/home/IndexHome'
-import AboutDoctor from '../components/home/AboutDoctor'
-import ServicesTreatments from '../components/home/ServicesTreatments'
 import EventParticipation from '../components/home/EventParticipation'
 import ProfessionalExperience from '../components/home/ProfessionalExperience'
-import Footer from '../components/Footer'
+import StatsMarquee from '../components/home/StatsMarquee'
+import ConditionsTreat from '../components/home/ConditionsTreat'
+import OurApproach from '../components/home/OurApproach'
+import InsidePractice from '../components/home/InsidePractice'
+import InternationalTraining from '../components/home/InternationalTraining'
 
 const Home = () => {
     return (
         <>
-            <Navbar />
             <IndexHome />
-            <AboutDoctor />
-            <ServicesTreatments />
+            <StatsMarquee />
+            <ConditionsTreat />
+            <OurApproach />
+            <InsidePractice />
+            <InternationalTraining />
             <EventParticipation />
             <ProfessionalExperience />
-            <Footer />
         </>
     )
 }

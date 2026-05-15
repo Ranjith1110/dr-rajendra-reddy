@@ -123,11 +123,7 @@ const ProfessionalExperience = () => {
                 <div className="w-full lg:w-5/12 flex flex-col relative">
                     <div ref={leftColRef} className="lg:sticky lg:top-32">
 
-                        <div className="inline-flex items-center gap-2 text-[#14B8A6] font-bold tracking-[0.2em] text-[10px] uppercase mb-5 bg-[#14B8A6]/10 px-4 py-2 rounded-full">
-                            <FiBriefcase size={14} /> Professional Career
-                        </div>
-
-                        <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#0A192F] tracking-tight mb-6 leading-[1.1]">
+                        <h2 className="text-4xl sm:text-5xl md:text-6xl block font-serif font-black italic tracking-tight mb-6 leading-[1.1]">
                             Elite Hospital <br />
                             <span className="text-[#14B8A6]">Affiliations.</span>
                         </h2>

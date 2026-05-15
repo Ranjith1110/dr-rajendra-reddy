@@ -84,10 +84,7 @@ const EventParticipation = () => {
 
                 {/* --- HEADER --- */}
                 <div ref={headerRef} className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
-                    <div className="inline-flex items-center gap-2 text-[#14B8A6] font-bold tracking-[0.2em] text-[10px] uppercase mb-4 md:mb-6 bg-[#14B8A6]/10 px-4 py-2 rounded-full">
-                        <FiGlobe size={14} /> Global Expertise
-                    </div>
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#0A192F] tracking-tight mb-6 leading-tight">
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl block font-serif font-black italic tracking-tight mb-6 leading-tight">
                         Big Event <br className="md:hidden" />
                         <span className="text-[#14B8A6]">Participation.</span>
                     </h2>
