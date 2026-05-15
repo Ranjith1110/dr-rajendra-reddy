@@ -108,7 +108,7 @@ const StatsMarquee = () => {
                     <div ref={marqueeRef} className="flex items-center whitespace-nowrap">
                         {marqueeItems.map((item, idx) => (
                             <div key={idx} className="flex items-center">
-                                <span className="text-[#0A192F] text-xs md:text-sm font-bold tracking-[0.15em] uppercase px-4 md:px-8">
+                                <span className=" text-xs md:text-sm font-bold tracking-[0.15em] uppercase px-4 md:px-8">
                                     {item}
                                 </span>
                                 {/* Signature teal accent divider */}
@@ -130,7 +130,7 @@ const StatsMarquee = () => {
                             {/* Premium Serif Number Display in Dark Navy */}
                             <div
                                 ref={addToCounters}
-                                className="text-4xl sm:text-5xl md:text-6xl font-normal text-[#0A192F] tracking-tight font-serif mb-2 md:mb-3"
+                                className="text-4xl sm:text-5xl md:text-6xl font-normal  tracking-tight font-serif mb-2 md:mb-3"
                             >
                                 0{stat.suffix}
                             </div>

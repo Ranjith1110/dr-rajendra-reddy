@@ -92,7 +92,7 @@ const ContactSection = () => {
                                 <input
                                     type="text"
                                     placeholder="Full name"
-                                    className="w-full border-b border-slate-200 py-3 text-[#0A192F] font-medium focus:outline-none focus:border-[#14B8A6] transition-colors bg-transparent placeholder:text-slate-300 placeholder:font-normal"
+                                    className="w-full border-b border-slate-200 py-3  font-medium focus:outline-none focus:border-[#14B8A6] transition-colors bg-transparent placeholder:text-slate-300 placeholder:font-normal"
                                 />
                             </div>
 
@@ -102,7 +102,7 @@ const ContactSection = () => {
                                 <input
                                     type="email"
                                     placeholder="you@example.com"
-                                    className="w-full border-b border-slate-200 py-3 text-[#0A192F] font-medium focus:outline-none focus:border-[#14B8A6] transition-colors bg-transparent placeholder:text-slate-300 placeholder:font-normal"
+                                    className="w-full border-b border-slate-200 py-3  font-medium focus:outline-none focus:border-[#14B8A6] transition-colors bg-transparent placeholder:text-slate-300 placeholder:font-normal"
                                 />
                             </div>
 
@@ -112,7 +112,7 @@ const ContactSection = () => {
                                 <textarea
                                     placeholder="Tell us about your concern, symptoms or appointment preference..."
                                     rows="3"
-                                    className="w-full border-b border-slate-200 py-3 text-[#0A192F] font-medium focus:outline-none focus:border-[#14B8A6] transition-colors bg-transparent resize-none placeholder:text-slate-300 placeholder:font-normal"
+                                    className="w-full border-b border-slate-200 py-3  font-medium focus:outline-none focus:border-[#14B8A6] transition-colors bg-transparent resize-none placeholder:text-slate-300 placeholder:font-normal"
                                 ></textarea>
                             </div>
 
@@ -197,7 +197,7 @@ const ContactSection = () => {
                                     <div key={idx} className={`py-5 flex items-start gap-4 ${idx !== hospitals.length - 1 ? 'border-b border-slate-100' : 'pb-0'}`}>
                                         <FiMapPin className="text-[#14B8A6] mt-1 shrink-0" size={18} />
                                         <div className="flex flex-col">
-                                            <h4 className="font-serif italic text-lg md:text-xl text-[#0A192F] mb-1">{hospital.name}</h4>
+                                            <h4 className="font-serif italic text-lg md:text-xl  mb-1">{hospital.name}</h4>
                                             <div className="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-1">{hospital.subtitle}</div>
                                             <p className="text-sm text-slate-500">{hospital.location}</p>
                                         </div>

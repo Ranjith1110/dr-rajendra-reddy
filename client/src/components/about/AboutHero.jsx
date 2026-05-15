@@ -208,7 +208,7 @@ const AboutHero = () => {
                             <FiCheckCircle size={24} />
                         </div>
                         <div>
-                            <h3 className="font-black text-[#0A192F] text-lg md:text-xl leading-none mb-1">Board Certified</h3>
+                            <h3 className="font-black  text-lg md:text-xl leading-none mb-1">Board Certified</h3>
                             <p className="text-slate-500 text-[10px] md:text-xs font-bold uppercase tracking-wide">International Fellow</p>
                         </div>
                     </div>

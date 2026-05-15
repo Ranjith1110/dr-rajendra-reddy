@@ -113,7 +113,7 @@ const Navbar = () => {
 
                     <div className="flex-shrink-0 cursor-pointer z-[60] relative flex items-center gap-3">
                         {/* Make the logo route to home */}
-                        <Link to="/" onClick={() => setIsOpen(false)} className={`text-xl md:text-2xl font-black tracking-tight transition-colors duration-500 ${isOpen ? 'text-white' : 'text-[#0A192F]'}`}>
+                        <Link to="/" onClick={() => setIsOpen(false)} className={`text-xl md:text-2xl font-black tracking-tight transition-colors duration-500 ${isOpen ? 'text-white' : ''}`}>
                             Dr. Rajendra<span className="text-[#14B8A6]"> Reddy</span>
                         </Link>
                     </div>
@@ -142,7 +142,7 @@ const Navbar = () => {
                         </Link>
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className={`p-2.5 rounded-full transition-all duration-500 flex items-center justify-center shadow-sm ${isOpen ? "bg-white/10 text-white hover:bg-white/20 border border-white/20" : "bg-slate-100 text-[#0A192F] hover:bg-slate-200 border border-slate-200"}`}
+                            className={`p-2.5 rounded-full transition-all duration-500 flex items-center justify-center shadow-sm ${isOpen ? "bg-white/10 text-white hover:bg-white/20 border border-white/20" : "bg-slate-100  hover:bg-slate-200 border border-slate-200"}`}
                         >
                             {isOpen ? <FiX size={22} strokeWidth={2.5} /> : <FiMenu size={22} strokeWidth={2.5} />}
                         </button>

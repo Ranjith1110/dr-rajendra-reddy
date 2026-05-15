@@ -153,13 +153,13 @@ const EventParticipation = () => {
                             </div>
 
                             <div>
-                                <h3 className="text-xl md:text-2xl font-bold text-[#0A192F] mb-3 group-hover:text-[#14B8A6] transition-colors duration-300">
+                                <h3 className="text-xl md:text-2xl font-bold  mb-3 group-hover:text-[#14B8A6] transition-colors duration-300">
                                     Global Conferences
                                 </h3>
                                 <p className="text-slate-500 text-sm font-medium leading-relaxed mb-4">
                                     Active participation in National & International Spine Conferences, shaping the future of spinal care.
                                 </p>
-                                <div className="inline-flex items-center gap-1 text-[#0A192F] text-xs font-bold uppercase tracking-widest group-hover:text-[#14B8A6] transition-colors">
+                                <div className="inline-flex items-center gap-1  text-xs font-bold uppercase tracking-widest group-hover:text-[#14B8A6] transition-colors">
                                     Read More <FiArrowUpRight size={16} />
                                 </div>
                             </div>

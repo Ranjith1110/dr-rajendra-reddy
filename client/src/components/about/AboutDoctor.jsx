@@ -181,7 +181,7 @@ const AboutDoctor = () => {
             {/* --- Hero Text (Fades out smoothly on scroll) --- */}
             <div ref={heroTitleRef} className="absolute inset-0 z-20 flex flex-col items-center justify-start pt-[14vh] md:pt-[12vh] pointer-events-none px-6 text-center">
                 <span className="text-[#14B8A6] font-bold tracking-[0.2em] md:tracking-[0.3em] text-[10px] md:text-sm uppercase mb-3 md:mb-4">Meet The Expert</span>
-                <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#0A192F] tracking-tight">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black  tracking-tight">
                     Precision Spine Care.
                 </h2>
             </div>
@@ -251,7 +251,7 @@ const AboutDoctor = () => {
                             </div>
                             <div className="text-center md:text-left">
                                 <div className="text-[8px] md:text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-0.5">TSMC Reg</div>
-                                <div className="text-xs md:text-base font-bold text-[#0A192F] tracking-wide">35214</div>
+                                <div className="text-xs md:text-base font-bold  tracking-wide">35214</div>
                             </div>
                         </div>
                     </div>
@@ -260,7 +260,7 @@ const AboutDoctor = () => {
 
                     {/* Qualifications Section */}
                     <div ref={addToTextRefs} className="my-4 md:my-6 w-full px-2 md:px-0">
-                        <h4 className="text-sm md:text-lg font-bold text-[#0A192F] mb-3 md:mb-4 flex items-center justify-center md:justify-start gap-2 md:gap-3">
+                        <h4 className="text-sm md:text-lg font-bold  mb-3 md:mb-4 flex items-center justify-center md:justify-start gap-2 md:gap-3">
                             <span className="w-1 md:w-1.5 h-4 md:h-6 bg-[#14B8A6] rounded-full block"></span> Qualifications
                         </h4>
                         <ul className="space-y-2 md:space-y-3">
@@ -277,7 +277,7 @@ const AboutDoctor = () => {
 
                     {/* Specialisations Grid */}
                     <div ref={addToTextRefs} className="mt-4 md:mt-0 w-full px-2 md:px-0">
-                        <h4 className="text-sm md:text-lg font-bold text-[#0A192F] mb-3 md:mb-5 flex items-center justify-center md:justify-start gap-2 md:gap-3">
+                        <h4 className="text-sm md:text-lg font-bold  mb-3 md:mb-5 flex items-center justify-center md:justify-start gap-2 md:gap-3">
                             <span className="w-1 md:w-1.5 h-4 md:h-6 bg-[#14B8A6] rounded-full block"></span> Core Specialisations
                         </h4>
                         <div className="grid grid-cols-2 gap-2 md:gap-4 pb-10 md:pb-0">
@@ -290,7 +290,7 @@ const AboutDoctor = () => {
                                     <div className="w-8 h-8 md:w-10 md:h-10 rounded-md md:rounded-lg bg-teal-50 flex items-center justify-center text-[#14B8A6] group-hover:bg-[#14B8A6] group-hover:text-white transition-colors duration-300 shrink-0">
                                         {React.cloneElement(spec.icon, { className: "w-4 h-4 md:w-5 md:h-5" })}
                                     </div>
-                                    <span className="font-semibold text-slate-700 text-[10px] md:text-sm group-hover:text-[#0A192F] transition-colors duration-300 leading-tight">
+                                    <span className="font-semibold text-slate-700 text-[10px] md:text-sm group-hover: transition-colors duration-300 leading-tight">
                                         {spec.title}
                                     </span>
                                 </div>

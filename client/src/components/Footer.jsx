@@ -104,7 +104,7 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="shrink-0 w-full md:w-auto relative z-10">
-                        <a href="#book" className="flex items-center justify-center gap-2 bg-white text-[#0A192F] px-8 py-3.5 rounded-full font-bold hover:bg-slate-50 hover:shadow-lg transition-all duration-300 w-full">
+                        <a href="#book" className="flex items-center justify-center gap-2 bg-white  px-8 py-3.5 rounded-full font-bold hover:bg-slate-50 hover:shadow-lg transition-all duration-300 w-full">
                             <FiCalendar size={18} />
                             Book Consultation
                         </a>

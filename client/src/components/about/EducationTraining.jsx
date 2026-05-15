@@ -82,7 +82,7 @@ const EducationTraining = () => {
                             </span>
 
                             {/* Education Text */}
-                            <span className="text-[#0A192F] text-sm md:text-base font-medium">
+                            <span className=" text-sm md:text-base font-medium">
                                 {item.text}
                             </span>
                         </div>

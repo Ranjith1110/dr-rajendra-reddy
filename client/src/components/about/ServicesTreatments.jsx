@@ -189,13 +189,13 @@ const ServicesTreatments = () => {
                             <div className="text-[#14B8A6] font-mono text-xl lg:text-2xl font-bold mb-4 opacity-50">
                                 0{idx + 1}
                             </div>
-                            <h3 className="text-3xl lg:text-4xl font-bold text-[#0A192F] mb-6 tracking-tight pr-4">
+                            <h3 className="text-3xl lg:text-4xl font-bold  mb-6 tracking-tight pr-4">
                                 {service.title}
                             </h3>
                             <p className="text-lg lg:text-xl text-slate-500 leading-relaxed mb-8 max-w-xl font-medium">
                                 {service.desc}
                             </p>
-                            <button className="w-fit inline-flex items-center gap-2 text-[#0A192F] font-bold pb-1 border-b-2 border-[#14B8A6] hover:gap-4 transition-all duration-300">
+                            <button className="w-fit inline-flex items-center gap-2  font-bold pb-1 border-b-2 border-[#14B8A6] hover:gap-4 transition-all duration-300">
                                 Explore Procedure <FiArrowRight className="text-[#14B8A6]" />
                             </button>
                         </div>
@@ -212,7 +212,7 @@ const ServicesTreatments = () => {
                         <div className="inline-flex items-center gap-2 text-[#14B8A6] font-bold tracking-[0.2em] text-[10px] uppercase mb-4 bg-[#14B8A6]/10 px-4 py-2 rounded-full">
                             <FiActivity size={12} /> Medical Excellence
                         </div>
-                        <h2 className="text-4xl font-black text-[#0A192F] tracking-tight leading-[1.1]">
+                        <h2 className="text-4xl font-black  tracking-tight leading-[1.1]">
                             Future-Ready <br />
                             <span className="text-[#14B8A6]">Spine Care.</span>
                         </h2>
@@ -234,10 +234,10 @@ const ServicesTreatments = () => {
                                 </div>
 
                                 <div className="text-[#14B8A6] font-mono text-sm font-bold mb-2">0{idx + 1}</div>
-                                <h3 className="text-2xl font-bold text-[#0A192F] mb-4 tracking-tight">{service.title}</h3>
+                                <h3 className="text-2xl font-bold  mb-4 tracking-tight">{service.title}</h3>
                                 <p className="text-slate-500 leading-relaxed mb-8 text-sm">{service.desc}</p>
 
-                                <button className="mt-auto w-fit inline-flex items-center gap-2 text-[#0A192F] text-sm font-bold pb-1 border-b-2 border-[#14B8A6]">
+                                <button className="mt-auto w-fit inline-flex items-center gap-2  text-sm font-bold pb-1 border-b-2 border-[#14B8A6]">
                                     Explore Procedure <FiArrowRight className="text-[#14B8A6]" />
                                 </button>
                             </div>

@@ -73,7 +73,7 @@ const InternationalTraining = () => {
 
                     <a
                         href="#about"
-                        className="inline-flex items-center justify-center gap-2 bg-white text-[#0A192F] px-7 py-3.5 rounded-full text-sm font-bold hover:bg-[#14B8A6] hover:text-white hover:shadow-[0_10px_20px_rgba(20,184,166,0.3)] transition-all duration-300 group"
+                        className="inline-flex items-center justify-center gap-2 bg-white  px-7 py-3.5 rounded-full text-sm font-bold hover:bg-[#14B8A6] hover:text-white hover:shadow-[0_10px_20px_rgba(20,184,166,0.3)] transition-all duration-300 group"
                     >
                         Read full biography
                         <FiArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

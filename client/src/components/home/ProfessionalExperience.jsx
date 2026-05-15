@@ -134,7 +134,7 @@ const ProfessionalExperience = () => {
 
                         {/* Responsibilities Block */}
                         <div className="bg-[#FAFAFA] border border-slate-200 rounded-[2rem] p-8 shadow-sm">
-                            <h3 className="text-xl font-bold text-[#0A192F] mb-6 flex items-center gap-3">
+                            <h3 className="text-xl font-bold  mb-6 flex items-center gap-3">
                                 <div className="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center text-[#14B8A6]">
                                     <FiActivity size={20} />
                                 </div>
@@ -145,7 +145,7 @@ const ProfessionalExperience = () => {
                                 {responsibilities.map((resp, idx) => (
                                     <li key={idx} className="flex items-start gap-3 group">
                                         <FiCheckCircle className="text-[#14B8A6] shrink-0 mt-1 w-5 h-5 group-hover:scale-110 transition-transform" />
-                                        <span className="text-slate-600 font-medium text-sm md:text-base leading-relaxed group-hover:text-[#0A192F] transition-colors">
+                                        <span className="text-slate-600 font-medium text-sm md:text-base leading-relaxed group-hover: transition-colors">
                                             {resp}
                                         </span>
                                     </li>
@@ -183,12 +183,12 @@ const ProfessionalExperience = () => {
                                 <div className="relative" style={{ transform: 'translateZ(40px)' }}>
 
                                     {/* Role Badge */}
-                                    <div className="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-lg mb-8 shadow-md" style={{ background: `linear-gradient(to right, ${item.gradient.split(' ')[1]}, ${item.gradient.split(' ')[3]})` }}>
+                                    <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-lg mb-8 shadow-md" style={{ background: `linear-gradient(to right, ${item.gradient.split(' ')[1]}, ${item.gradient.split(' ')[3]})` }}>
                                         <FiTarget size={14} /> Surgeon Role
                                     </div>
 
                                     {/* Role Title */}
-                                    <h3 className="text-2xl md:text-3xl font-black text-[#0A192F] leading-snug mb-3 group-hover:text-[#14B8A6] transition-colors duration-300">
+                                    <h3 className="text-2xl md:text-3xl  block font-serif font-black italic leading-snug mb-3 group-hover:text-[#14B8A6] transition-colors duration-300">
                                         {item.role}
                                     </h3>
 
