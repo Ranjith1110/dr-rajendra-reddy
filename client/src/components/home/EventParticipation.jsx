@@ -78,7 +78,7 @@ const EventParticipation = () => {
     };
 
     return (
-        <section ref={sectionRef} id="events" className="relative w-full bg-[#FAFAFA] py-24 md:py-32 overflow-hidden border-t border-slate-100">
+        <section ref={sectionRef} id="events" className="relative w-full py-24 md:py-32 overflow-hidden">
 
             <div className="max-w-[85rem] mx-auto px-6 md:px-12 relative z-10">
 

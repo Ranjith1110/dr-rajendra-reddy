@@ -44,7 +44,7 @@ const InsidePractice = () => {
     }, []);
 
     return (
-        <section ref={sectionRef} className="w-full bg-[#F9F8F6] py-24 md:py-32 overflow-hidden font-sans">
+        <section ref={sectionRef} className="w-full py-24 md:py-32 overflow-hidden font-sans">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
 
 
