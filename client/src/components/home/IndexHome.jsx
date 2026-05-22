@@ -70,21 +70,29 @@ const IndexHome = () => {
 
                 <div className="max-w-3xl">
 
-                    {/* Main Headline */}
+                    {/* Main Headline (Fully Responsive Layout) */}
                     <h1
                         ref={addToRefs}
-                        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl block font-serif font-black italic text-white tracking-tight leading-[1.15] md:leading-[1.1] mb-5 md:mb-6"
+                        className="flex flex-col gap-2 md:gap-3 mb-2 md:mb-8"
                     >
-                        Relieve Pain. <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2DD4BF] to-[#0D9488]">
-                            Restore Mobility.
+                        {/* The added motto styled elegantly so it doesn't break mobile screens */}
+                        <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-serif font-light text-slate-300 tracking-wide italic">
+                            Our Motto to Keep your spine young & flexible
+                        </span>
+                        
+                        {/* The punchy core headline */}
+                        <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl block font-serif font-black italic text-white tracking-tight leading-[1.1] md:leading-[1.05]">
+                            Relieve Pain <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2DD4BF] to-[#0D9488]">
+                                Restore Mobility
+                            </span>
                         </span>
                     </h1>
 
                     {/* Sub-headline */}
                     <p
                         ref={addToRefs}
-                        className="text-base sm:text-lg md:text-xl text-slate-300 font-light leading-relaxed mb-8 md:mb-10 max-w-xl md:max-w-2xl"
+                        className="text-base sm:text-lg md:text-xl text-slate-300 font-light leading-relaxed mb-4 md:mb-10 max-w-xl md:max-w-2xl"
                     >
                         Pioneering minimally invasive solutions to complex spinal conditions. Get expert care from Dr. Rajendra Reddy to return to an active, pain-free life.
                     </p>
