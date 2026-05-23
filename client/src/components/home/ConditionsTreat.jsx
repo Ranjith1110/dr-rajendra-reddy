@@ -70,10 +70,10 @@ const ConditionsTreat = () => {
             <div className="max-w-7xl mx-auto px-6 md:px-12">
 
                 {/* --- HEADER --- */}
-                <div ref={headerRef} className="text-center max-w-4xl mx-auto mb-16 md:mb-20">
+                <div ref={headerRef} className="text-center max-w-5xl mx-auto mb-16 md:mb-20">
                     <h2 className="text-4xl sm:text-5xl md:text-6xl block font-serif font-black italic tracking-tight mb-6 leading-tight">
-                        Relief that begins at the <br className="md:hidden" />
-                        <span className="text-[#14B8A6]">source of your pain.</span>
+                        We Provide you relief by treating <br className="md:hidden" />
+                        <span className="text-[#14B8A6]"> the root cause of your pain.</span>
                     </h2>
                     <p className="text-base md:text-lg text-slate-500 font-medium leading-relaxed">
                         From slipped discs to complex degenerative disorders, our practice applies the latest endoscopic techniques — minimising tissue damage and accelerating your return to everyday life.
