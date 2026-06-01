@@ -23,19 +23,19 @@ const ConditionsTreat = () => {
             desc: "Endoscopic discectomy for disc herniation with same-day recovery.",
             icon: <FiActivity size={16} />,
             // Using placeholder medical images matching the context
-            image: "https://images.unsplash.com/photo-1584516150909-c43483ee7932?q=80&w=800&auto=format&fit=crop",
+            image: "/endoscopic/1.webp",
         },
         {
             title: "Sciatica",
             desc: "Targeted nerve decompression to relieve radiating leg pain.",
             icon: <FiShield size={16} />,
-            image: "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?q=80&w=800&auto=format&fit=crop",
+            image: "/endoscopic/2.jpg",
         },
         {
             title: "Spinal Stenosis",
             desc: "Minimally invasive decompression to restore mobility.",
             icon: <FiZoomIn size={16} />,
-            image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=800&auto=format&fit=crop",
+            image: "/endoscopic/3.webp",
         }
     ];
 

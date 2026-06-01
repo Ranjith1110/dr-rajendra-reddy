@@ -106,7 +106,7 @@ const EventParticipation = () => {
                     >
                         {/* Background Image */}
                         <img
-                            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop"
+                            src="/event/1.avif"
                             alt="Barcelona Spain"
                             className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 group-hover:opacity-40 transition-all duration-700 ease-in-out"
                         />

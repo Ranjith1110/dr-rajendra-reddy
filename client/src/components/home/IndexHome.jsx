@@ -77,7 +77,7 @@ const IndexHome = () => {
                     >
                         {/* The added motto styled elegantly so it doesn't break mobile screens */}
                         <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-serif font-light text-slate-300 tracking-wide italic">
-                            Our Motto to Keep your spine young & flexible
+                            To Keep your spine young & flexible
                         </span>
                         
                         {/* The punchy core headline */}

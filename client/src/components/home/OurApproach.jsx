@@ -80,7 +80,7 @@ const OurApproach = () => {
                     >
                         {/* Placeholder image matching a consulting doctor */}
                         <img
-                            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop"
+                            src="/concerns/2.webp"
                             alt="Doctor Consulting"
                             className="w-full h-full object-cover"
                         />
@@ -93,7 +93,7 @@ const OurApproach = () => {
                     >
                         {/* Placeholder image matching a medical spine/heart model */}
                         <img
-                            src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=500&auto=format&fit=crop"
+                            src="/concerns/1.webp"
                             alt="Medical Model"
                             className="w-full h-full object-cover"
                         />

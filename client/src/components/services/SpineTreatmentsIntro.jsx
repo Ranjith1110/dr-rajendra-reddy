@@ -66,7 +66,7 @@ const SpineTreatmentsIntro = () => {
                     >
                         {/* Placeholder image matching the medical model from the reference */}
                         <img
-                            src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=800&auto=format&fit=crop"
+                            src="/comprehensive-spine/1.jpg"
                             alt="Medical Anatomy Model"
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
                         />

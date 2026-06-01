@@ -23,25 +23,25 @@ const ServicesTreatments = () => {
         {
             title: "Endoscopic Spine Surgery",
             desc: "Advanced keyhole procedures with minimal tissue damage. Experience dramatically faster recovery times for slip disc and decompression treatments.",
-            image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop",
+            image: "/spine-care/1.webp",
             gradient: "from-[#14B8A6] to-[#0D9488]"
         },
         {
             title: "Minimally Invasive Care",
             desc: "Tailored surgical programs designed to treat complex spinal issues with extreme precision, ensuring significantly less pain and quicker mobility.",
-            image: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?q=80&w=800&auto=format&fit=crop",
+            image: "/spine-care/2.webp",
             gradient: "from-[#0EA5E9] to-[#0284C7]"
         },
         {
             title: "Advanced Procedures",
             desc: "Dedicated to helping you achieve a pain-free life through targeted interventions like vertebroplasty, kyphoplasty, and regenerative PRP therapy.",
-            image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=800&auto=format&fit=crop",
+            image: "/spine-care/3.webp",
             gradient: "from-[#8B5CF6] to-[#6D28D9]"
         },
         {
             title: "Comprehensive Wellness",
             desc: "Our care goes far beyond surgery. We offer holistic preventive assessments, expert posture evaluation, and ergonomic screening for lasting health.",
-            image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop",
+            image: "/spine-care/4.jpg",
             gradient: "from-[#F59E0B] to-[#D97706]"
         }
     ];

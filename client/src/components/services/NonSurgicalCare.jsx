@@ -95,7 +95,7 @@ const NonSurgicalCare = () => {
                         className="w-1/2 max-w-[280px] aspect-[3/4] rounded-[2rem] overflow-hidden shadow-xl shadow-[#0A192F]/10 mb-12 md:mb-20 bg-slate-200"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop"
+                            src="/doctor.jpg"
                             alt="Doctor consulting with patient"
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
                         />

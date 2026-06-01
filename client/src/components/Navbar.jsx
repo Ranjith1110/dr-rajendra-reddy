@@ -32,7 +32,7 @@ const Navbar = () => {
     const navLinks = [
         { num: '01', name: 'Home', path: '/' },
         { num: '02', name: 'About Doctor', path: '/about' },
-        { num: '03', name: 'Spine Treatments', path: '/services' },
+        { num: '03', name: 'Services', path: '/services' },
         { num: '04', name: 'Contact Us', path: '/contact' },
     ];
 
