@@ -199,7 +199,7 @@ const AboutDoctor = () => {
                     >
                         {/* TODO: Replace src with Dr. Reddy's studio portrait */}
                         <img
-                            src="/doctor.jpeg"
+                            src="/doctor.jpg"
                             alt="Dr. Rajendra Reddy"
                             className="w-full h-full object-cover"
                         />
