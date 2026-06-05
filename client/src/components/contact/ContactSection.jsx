@@ -233,7 +233,7 @@ const ContactSection = () => {
                                 <FiPhone className="text-slate-400 mt-1 group-hover:text-[#14B8A6] transition-colors" size={18} />
                                 <div>
                                     <div className="text-[11px] uppercase tracking-widest text-slate-400 mb-1">Phone</div>
-                                    <a href="tel:+919000000000" className="text-lg md:text-xl tracking-wide hover:text-[#14B8A6] transition-colors">+91 90000 00000</a>
+                                    <a href="tel:+919000000000" className="text-lg md:text-xl tracking-wide hover:text-[#14B8A6] transition-colors">+91 7899042327</a>
                                 </div>
                             </div>
 
@@ -241,7 +241,7 @@ const ContactSection = () => {
                                 <FiMail className="text-slate-400 mt-1 group-hover:text-[#14B8A6] transition-colors" size={18} />
                                 <div>
                                     <div className="text-[11px] uppercase tracking-widest text-slate-400 mb-1">Email</div>
-                                    <a href="mailto:care@drrajendrareddy.in" className="text-lg md:text-xl tracking-wide hover:text-[#14B8A6] transition-colors">care@drrajendrareddy.in</a>
+                                    <a href="mailto: rajendrareddy999@gmail.com" className="text-lg md:text-xl tracking-wide hover:text-[#14B8A6] transition-colors"> rajendrareddy999@gmail.com</a>
                                 </div>
                             </div>
 
@@ -249,7 +249,7 @@ const ContactSection = () => {
                                 <FiClock className="text-slate-400 mt-1 group-hover:text-[#14B8A6] transition-colors" size={18} />
                                 <div>
                                     <div className="text-[11px] uppercase tracking-widest text-slate-400 mb-1">Consultation hours</div>
-                                    <div className="text-lg md:text-xl tracking-wide">Mon — Sat · 10:00 — 18:00</div>
+                                    <div className="text-lg md:text-xl tracking-wide">Mon — Sat : 9:00 AM — 6:00 PM</div>
                                 </div>
                             </div>
                         </div>

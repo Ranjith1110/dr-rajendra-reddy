@@ -193,13 +193,13 @@ const Navbar = () => {
                                 <FiPhone size={14} /> Contact Clinic
                             </h3>
                             <div className="space-y-6 text-white/90">
-                                <a href="tel:+910000000000" className="block group w-fit">
+                                <a href="tel:+917899042327" className="block group w-fit">
                                     <p className="text-sm text-white/50 mb-1 font-mono uppercase tracking-wider">Appointments</p>
-                                    <p className="text-2xl md:text-3xl font-light group-hover:text-[#14B8A6] transition-colors">+91 00000 00000</p>
+                                    <p className="text-2xl md:text-3xl font-light group-hover:text-[#14B8A6] transition-colors">+91 7899042327</p>
                                 </a>
-                                <a href="mailto:info@drrajendrareddy.com" className="block group w-fit">
+                                <a href="mailto:rajendrareddy999@gmail.com" className="block group w-fit">
                                     <p className="text-sm text-white/50 mb-1 font-mono uppercase tracking-wider">Email</p>
-                                    <p className="text-lg md:text-xl font-light group-hover:text-[#14B8A6] transition-colors">info@drrajendrareddy.com</p>
+                                    <p className="text-lg md:text-xl font-light group-hover:text-[#14B8A6] transition-colors">rajendrareddy999@gmail.com</p>
                                 </a>
                             </div>
                         </div>

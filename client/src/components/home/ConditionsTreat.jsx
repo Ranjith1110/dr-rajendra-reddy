@@ -117,7 +117,7 @@ const ConditionsTreat = () => {
 
                                 {/* Action Link */}
                                 <a
-                                    href="#treatments"
+                                    href="/services"
                                     className="inline-flex items-center gap-2  text-sm font-bold uppercase tracking-wide group-hover:text-[#14B8A6] transition-colors mt-auto"
                                 >
                                     Learn more <FiArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

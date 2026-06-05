@@ -51,10 +51,10 @@ const Footer = () => {
     };
 
     const quickLinks = [
-        { name: "Home", href: "#" },
-        { name: "About Doctor", href: "#about" },
-        { name: "Spine Treatments", href: "#services" },
-        { name: "Contact Us", href: "#contact" },
+        { name: "Home", href: "/" },
+        { name: "About Doctor", href: "/about" },
+        { name: "Spine Treatments", href: "/services" },
+        { name: "Contact Us", href: "/contact" },
     ];
 
     const hospitals = [
@@ -104,7 +104,7 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="shrink-0 w-full md:w-auto relative z-10">
-                        <a href="#book" className="flex items-center justify-center gap-2 bg-white  px-8 py-3.5 rounded-full font-bold hover:bg-slate-50 hover:shadow-lg transition-all duration-300 w-full">
+                        <a href="/contact" className="flex items-center justify-center gap-2 bg-white  px-8 py-3.5 rounded-full font-bold hover:bg-slate-50 hover:shadow-lg transition-all duration-300 w-full">
                             <FiCalendar size={18} />
                             Book Consultation
                         </a>
@@ -176,8 +176,8 @@ const Footer = () => {
                                 <FiPhone className="text-[#14B8A6] shrink-0 mt-1" size={16} />
                                 <div className="flex flex-col">
                                     <span className="text-slate-400 font-medium mb-1">24/7 Helpline</span>
-                                    <a href="tel:+910000000000" className="text-white font-semibold hover:text-[#14B8A6] transition-colors">
-                                        +91 00000 00000
+                                    <a href="tel:+917899042327" className="text-white font-semibold hover:text-[#14B8A6] transition-colors">
+                                        +91 7899042327
                                     </a>
                                 </div>
                             </li>
@@ -185,8 +185,8 @@ const Footer = () => {
                                 <FiMail className="text-[#14B8A6] shrink-0 mt-1" size={16} />
                                 <div className="flex flex-col">
                                     <span className="text-slate-400 font-medium mb-1">Email Support</span>
-                                    <a href="mailto:info@drrajendrareddy.com" className="text-white font-semibold hover:text-[#14B8A6] transition-colors">
-                                        info@drrajendrareddy.com
+                                    <a href="mailto: rajendrareddy999@gmail.com" className="text-white font-semibold hover:text-[#14B8A6] transition-colors">
+                                         rajendrareddy999@gmail.com
                                     </a>
                                 </div>
                             </li>

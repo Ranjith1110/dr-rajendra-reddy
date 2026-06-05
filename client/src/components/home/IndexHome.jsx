@@ -100,7 +100,7 @@ const IndexHome = () => {
                         className="flex flex-col sm:flex-row items-start sm:items-center gap-4 md:gap-5"
                     >
                         <a
-                            href="#book"
+                            href="/contact"
                             className="flex items-center justify-center gap-2 bg-[#0D9488] text-white px-8 py-3.5 md:py-4 rounded-full text-sm md:text-base font-semibold hover:bg-[#0F766E] hover:shadow-[0_10px_30px_rgba(13,148,136,0.4)] transition-all duration-300 active:scale-95 w-full sm:w-auto"
                         >
                             <FiCalendar size={18} />
@@ -108,7 +108,7 @@ const IndexHome = () => {
                         </a>
 
                         <a
-                            href="#treatments"
+                            href="/services"
                             className="flex items-center justify-center gap-2 bg-transparent text-white border border-white/30 px-8 py-3.5 md:py-4 rounded-full text-sm md:text-base font-semibold hover:bg-white/10 hover:border-white transition-all duration-300 w-full sm:w-auto group"
                         >
                             Explore Treatments

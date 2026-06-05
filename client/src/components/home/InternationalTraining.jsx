@@ -72,7 +72,7 @@ const InternationalTraining = () => {
                     </p>
 
                     <a
-                        href="#about"
+                        href="/about"
                         className="inline-flex items-center justify-center gap-2 bg-white  px-7 py-3.5 rounded-full text-sm font-bold hover:bg-[#14B8A6] hover:text-white hover:shadow-[0_10px_20px_rgba(20,184,166,0.3)] transition-all duration-300 group"
                     >
                         Read full biography

@@ -33,7 +33,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 // ==========================================
 // EMAIL CONFIGURATION & SPAM FIX
 // ==========================================
-$to = "ranjithram878@gmail.com";
+$to = "rajendrareddy999@gmail.com";
 $subject = "New Consultation Request: $name";
 
 // CRITICAL SPAM FIX: This MUST be an email on your hosting domain!
