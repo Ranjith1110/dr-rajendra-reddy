@@ -19,7 +19,7 @@ const InternationalTraining = () => {
     // Content mapped directly from your reference image
     const trainingStats = [
         { icon: <FiAward size={22} strokeWidth={1.5} />, text: "FRGUHS Spine Surgery" },
-        { icon: <FiPlus size={22} strokeWidth={1.5} />, text: "Fellowship Endoscopic" },
+        { icon: <FiPlus size={22} strokeWidth={1.5} />, text: "Fellowship in Endoscopic Spine surgery" },
         { icon: <FiStar size={22} strokeWidth={1.5} />, text: "Fellowship Barcelona, Australia and South korea." },
         { icon: <FiGrid size={22} strokeWidth={1.5} />, text: "3 Hospital affiliations" }
     ];

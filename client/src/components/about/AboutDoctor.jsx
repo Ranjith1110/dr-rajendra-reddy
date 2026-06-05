@@ -129,7 +129,7 @@ const AboutDoctor = () => {
                 // 7. Counter runs early alongside the text reveal
                 const counter = { val: 0 };
                 tl.to(counter, {
-                    val: 6,
+                    val: 10,
                     duration: 0.5,
                     ease: "none",
                     onUpdate: () => {

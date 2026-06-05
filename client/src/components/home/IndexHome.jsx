@@ -66,7 +66,7 @@ const IndexHome = () => {
             </div>
 
             {/* --- Hero Content --- */}
-            <div className="relative z-20 max-w-7xl mx-auto w-full px-5 sm:px-8 md:px-12 flex flex-col justify-end md:justify-center h-full pb-32 md:pb-0 pt-24 md:pt-20">
+            <div className="relative z-20 max-w-7xl mx-auto w-full px-5 sm:px-8 md:px-12 flex flex-col justify-end md:justify-center h-full pb-32 md:pb-0 pt-24 md:pt-20 mt-10 md:mt-0">
 
                 <div className="max-w-3xl">
 
@@ -77,20 +77,19 @@ const IndexHome = () => {
                     >
                         {/* The added motto styled elegantly so it doesn't break mobile screens */}
                         <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-serif font-light text-slate-300 tracking-wide italic">
-                            Our Motto To Keep
+                            Our Motto:
                         </span>
 
                         {/* The punchy core headline */}
-                        <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl block font-serif font-black italic text-white tracking-tight leading-[1.1] md:leading-[1.05]">
-                            Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2DD4BF] to-[#0D9488]">Spine young & flexible
-                                Relieve Pain</span> <br />Restore Mobility
+                        <span className="text-[34px] md:text-6xl block font-serif font-black italic text-white tracking-tight leading-[1.1] md:leading-[1.05]">
+                           To Keep Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2DD4BF] to-[#0D9488]">Spine young & flexible Relieve Pain</span> Restore Mobility
                         </span>
                     </h1>
 
                     {/* Sub-headline */}
                     <p
                         ref={addToRefs}
-                        className="text-base sm:text-lg md:text-xl text-slate-300 font-light leading-relaxed mb-4 md:mb-10 max-w-xl md:max-w-2xl"
+                        className="text-[14px] md:text-xl text-slate-300 font-light leading-relaxed mb-4 md:mb-10 max-w-xl md:max-w-2xl"
                     >
                         Pioneering minimally invasive solutions to complex spinal conditions. Get expert care from Dr. Rajendra Reddy to return to an active, pain-free life.
                     </p>
@@ -123,7 +122,7 @@ const IndexHome = () => {
             {/* --- Scroll Down Indicator --- */}
             <div
                 ref={addToRefs}
-                className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2"
+                className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-20 hidden md:flex flex-col items-center gap-2"
             >
                 <span className="text-white/50 text-[10px] md:text-xs font-semibold tracking-widest uppercase">Scroll</span>
                 <div className="w-[1px] h-10 md:h-12 bg-white/20 relative overflow-hidden">

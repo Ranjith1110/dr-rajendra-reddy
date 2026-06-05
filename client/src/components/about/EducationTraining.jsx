@@ -15,12 +15,11 @@ const EducationTraining = () => {
 
     // Content extracted directly from your reference image
     const educationList = [
-        { id: "01", text: "BSc" },
-        { id: "02", text: "MBBS — Bangalore Medical College" },
-        { id: "03", text: "MS Orthopaedics — Bangalore Medical College" },
-        { id: "04", text: "FRGUHS (Spine Surgery)" },
-        { id: "05", text: "Fellowship in Endoscopic Spine Surgery" },
-        { id: "06", text: "Fellowship in Advanced Spine Surgery — Barcelona, Spain, Australia and South korea." }
+        { id: "01", text: "MBBS — VIMS & RC" },
+        { id: "02", text: "MS Orthopaedics — Bangalore Medical College" },
+        { id: "03", text: "FRGUHS ( Post doctoral Fellowship in Spine Surgery )" },
+        { id: "04", text: "Fellowship in Endoscopic Spine Surgery" },
+        { id: "05", text: "Fellowship in Advanced Spine Surgery — Barcelona, Spain, Australia and South korea." }
     ];
 
     useLayoutEffect(() => {

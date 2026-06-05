@@ -131,7 +131,7 @@ const EventParticipation = () => {
                                 Fellowship in Advanced Spine Surgery
                             </h3>
                             <p className="text-slate-300 md:text-lg font-medium max-w-xl flex items-center gap-2">
-                                <FiMapPin className="text-[#14B8A6]" /> Barcelona, Spain, Australia and South korea., Australia and South korea.
+                                <FiMapPin className="text-[#14B8A6]" /> Barcelona, Spain, Australia and South korea.
                             </p>
                         </div>
                     </div>
