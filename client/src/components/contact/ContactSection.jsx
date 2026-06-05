@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect } from 'react';
+import React, { useRef, useLayoutEffect, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -11,6 +11,11 @@ const ContactSection = () => {
     const sectionRef = useRef(null);
     const leftColumnRef = useRef(null);
     const rightCardsRef = useRef([]);
+
+    // --- FORM STATE ---
+    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [status, setStatus] = useState({ type: '', message: '' });
+    const [isLoading, setIsLoading] = useState(false);
 
     // Helper to store right-side card refs cleanly for GSAP staggering
     rightCardsRef.current = [];
@@ -47,7 +52,7 @@ const ContactSection = () => {
                 }
             });
 
-            // 1. Left column content (Heading, Text, Form) staggers in
+            // 1. Left column content staggers in
             tl.fromTo(leftColumnRef.current.children,
                 { opacity: 0, y: 30 },
                 { opacity: 1, y: 0, stagger: 0.15, duration: 0.8, ease: "power3.out" }
@@ -63,6 +68,65 @@ const ContactSection = () => {
 
         return () => ctx.revert();
     }, []);
+
+    // --- FORM HANDLERS ---
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        // Basic Frontend Validation
+        if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+            setStatus({ type: 'error', message: 'Please fill out all fields.' });
+            return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) {
+            setStatus({ type: 'error', message: 'Please enter a valid email address.' });
+            return;
+        }
+
+        setIsLoading(true);
+        setStatus({ type: '', message: '' });
+
+        try {
+            // Fetching the PHP file
+            const response = await fetch('/send_email.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            });
+
+            // CRITICAL FIX: Check if the file was actually found BEFORE reading the JSON
+            if (!response.ok) {
+                throw new Error(`Server error: ${response.status} ${response.statusText}`);
+            }
+
+            // If the response is OK (200), parse the JSON
+            const result = await response.json();
+
+            if (result.status === 'success') {
+                setStatus({ type: 'success', message: result.message });
+                setFormData({ name: '', email: '', message: '' }); // Clear form
+            } else {
+                setStatus({ type: 'error', message: result.message || 'Something went wrong.' });
+            }
+        } catch (error) {
+            console.error("Submission error:", error);
+            setStatus({
+                type: 'error',
+                message: 'Could not connect to the mail server. Please ensure you are testing on your live server.'
+            });
+        } finally {
+            setIsLoading(false);
+        }
+    };
 
     return (
         <section ref={sectionRef} id="contact" className="w-full py-24 md:py-32 overflow-hidden mt-14">
@@ -84,15 +148,26 @@ const ContactSection = () => {
 
                     {/* Contact Form Card */}
                     <div className="w-full bg-white rounded-[2rem] p-8 md:p-10 lg:p-12 shadow-[0_20px_40px_-15px_rgba(10,25,47,0.05)] border border-slate-100">
-                        <form className="flex flex-col w-full" onSubmit={(e) => e.preventDefault()}>
+                        <form className="flex flex-col w-full" onSubmit={handleSubmit}>
+
+                            {/* Status Message Display */}
+                            {status.message && (
+                                <div className={`mb-6 p-4 rounded-lg text-sm font-semibold ${status.type === 'success' ? 'bg-teal-50 text-teal-700 border border-teal-200' : 'bg-red-50 text-red-700 border border-red-200'}`}>
+                                    {status.message}
+                                </div>
+                            )}
 
                             {/* Input: Name */}
                             <div className="flex flex-col mb-8">
                                 <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2">Your Name</label>
                                 <input
                                     type="text"
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleInputChange}
                                     placeholder="Full name"
-                                    className="w-full border-b border-slate-200 py-3  font-medium focus:outline-none focus:border-[#14B8A6] transition-colors bg-transparent placeholder:text-slate-300 placeholder:font-normal"
+                                    disabled={isLoading}
+                                    className="w-full border-b border-slate-200 py-3 font-medium focus:outline-none focus:border-[#14B8A6] transition-colors bg-transparent placeholder:text-slate-300 placeholder:font-normal disabled:opacity-50"
                                 />
                             </div>
 
@@ -101,8 +176,12 @@ const ContactSection = () => {
                                 <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2">Email Address</label>
                                 <input
                                     type="email"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleInputChange}
                                     placeholder="you@example.com"
-                                    className="w-full border-b border-slate-200 py-3  font-medium focus:outline-none focus:border-[#14B8A6] transition-colors bg-transparent placeholder:text-slate-300 placeholder:font-normal"
+                                    disabled={isLoading}
+                                    className="w-full border-b border-slate-200 py-3 font-medium focus:outline-none focus:border-[#14B8A6] transition-colors bg-transparent placeholder:text-slate-300 placeholder:font-normal disabled:opacity-50"
                                 />
                             </div>
 
@@ -110,19 +189,24 @@ const ContactSection = () => {
                             <div className="flex flex-col mb-12">
                                 <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2">How Can We Help?</label>
                                 <textarea
+                                    name="message"
+                                    value={formData.message}
+                                    onChange={handleInputChange}
                                     placeholder="Tell us about your concern, symptoms or appointment preference..."
                                     rows="3"
-                                    className="w-full border-b border-slate-200 py-3  font-medium focus:outline-none focus:border-[#14B8A6] transition-colors bg-transparent resize-none placeholder:text-slate-300 placeholder:font-normal"
+                                    disabled={isLoading}
+                                    className="w-full border-b border-slate-200 py-3 font-medium focus:outline-none focus:border-[#14B8A6] transition-colors bg-transparent resize-none placeholder:text-slate-300 placeholder:font-normal disabled:opacity-50"
                                 ></textarea>
                             </div>
 
                             {/* Submit Button */}
                             <button
                                 type="submit"
-                                className="group self-start inline-flex items-center gap-2 bg-[#0A192F] text-white px-8 py-3.5 rounded-full text-sm font-semibold shadow-lg hover:bg-[#14B8A6] hover:shadow-[0_15px_30px_rgba(20,184,166,0.3)] transition-all duration-300"
+                                disabled={isLoading}
+                                className={`group self-start inline-flex items-center gap-2 bg-[#0A192F] text-white px-8 py-3.5 rounded-full text-sm font-semibold shadow-lg transition-all duration-300 ${isLoading ? 'opacity-70 cursor-not-allowed' : 'hover:bg-[#14B8A6] hover:shadow-[0_15px_30px_rgba(20,184,166,0.3)]'}`}
                             >
-                                Send message
-                                <FiSend size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                                {isLoading ? 'Sending...' : 'Send message'}
+                                {!isLoading && <FiSend size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />}
                             </button>
 
                         </form>
@@ -135,7 +219,7 @@ const ContactSection = () => {
                 ========================================= */}
                 <div className="lg:col-span-5 flex flex-col gap-6 lg:mt-4">
 
-                    {/* Direct Contact Card (Deep Navy) */}
+                    {/* Direct Contact Card */}
                     <div
                         ref={addToCards}
                         className="w-full bg-[#0A192F] text-white rounded-[2rem] p-8 md:p-10 shadow-xl"
@@ -171,19 +255,17 @@ const ContactSection = () => {
                         </div>
                     </div>
 
-                    {/* Practising At Card (White with Header Image) */}
+                    {/* Practising At Card */}
                     <div
                         ref={addToCards}
                         className="w-full bg-white rounded-[2rem] overflow-hidden shadow-sm border border-slate-100 flex flex-col"
                     >
-                        {/* Hospital Header Image */}
                         <div className="w-full h-40 md:h-48 relative bg-slate-200 shrink-0">
                             <img
                                 src="https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?q=80&w=800&auto=format&fit=crop"
                                 alt="Modern Hospital Building"
                                 className="w-full h-full object-cover"
                             />
-                            {/* Subtle dark overlay for premium feel */}
                             <div className="absolute inset-0 bg-[#0A192F]/10 mix-blend-multiply"></div>
                         </div>
 
@@ -197,7 +279,7 @@ const ContactSection = () => {
                                     <div key={idx} className={`py-5 flex items-start gap-4 ${idx !== hospitals.length - 1 ? 'border-b border-slate-100' : 'pb-0'}`}>
                                         <FiMapPin className="text-[#14B8A6] mt-1 shrink-0" size={18} />
                                         <div className="flex flex-col">
-                                            <h4 className="font-serif italic text-lg md:text-xl  mb-1">{hospital.name}</h4>
+                                            <h4 className="font-serif italic text-lg md:text-xl mb-1">{hospital.name}</h4>
                                             <div className="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-1">{hospital.subtitle}</div>
                                             <p className="text-sm text-slate-500">{hospital.location}</p>
                                         </div>
