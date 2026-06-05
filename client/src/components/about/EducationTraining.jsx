@@ -20,7 +20,7 @@ const EducationTraining = () => {
         { id: "03", text: "MS Orthopaedics — Bangalore Medical College" },
         { id: "04", text: "FRGUHS (Spine Surgery)" },
         { id: "05", text: "Fellowship in Endoscopic Spine Surgery" },
-        { id: "06", text: "Fellowship in Advanced Spine Surgery — Barcelona, Spain" }
+        { id: "06", text: "Fellowship in Advanced Spine Surgery — Barcelona, Spain, Australia and South korea." }
     ];
 
     useLayoutEffect(() => {

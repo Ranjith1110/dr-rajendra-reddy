@@ -20,7 +20,7 @@ const InternationalTraining = () => {
     const trainingStats = [
         { icon: <FiAward size={22} strokeWidth={1.5} />, text: "FRGUHS Spine Surgery" },
         { icon: <FiPlus size={22} strokeWidth={1.5} />, text: "Fellowship Endoscopic" },
-        { icon: <FiStar size={22} strokeWidth={1.5} />, text: "Fellowship Barcelona" },
+        { icon: <FiStar size={22} strokeWidth={1.5} />, text: "Fellowship Barcelona, Australia and South korea." },
         { icon: <FiGrid size={22} strokeWidth={1.5} />, text: "3 Hospital affiliations" }
     ];
 
@@ -64,11 +64,11 @@ const InternationalTraining = () => {
                     <h2 className="text-[2.5rem] sm:text-5xl block font-serif font-black italic text-white tracking-tight leading-[1.1] mb-6">
                         Trained where the <br className="hidden sm:block" />
                         future of spine surgery <br className="hidden sm:block" />
-                        is shaped Barcelona.
+                        is shaped Barcelona, Australia and South korea.
                     </h2>
 
                     <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-10 max-w-lg font-light">
-                        Dr. Reddy's Fellowship in Advanced Spine Surgery in Spain placed him alongside Europe's leading endoscopic surgeons — bringing world-class technique back to Hyderabad.
+                        Dr. Reddy's training under world-renowed spine surgeons in Spain, Australia and South korea has helped him bring world class surgical techniques to Hyderabad.
                     </p>
 
                     <a

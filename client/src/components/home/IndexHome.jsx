@@ -60,7 +60,7 @@ const IndexHome = () => {
                 {/* --- Darker Black Overlays --- */}
                 {/* 1. Universal solid black tint to darken the entire video */}
                 <div className="absolute inset-0 bg-black/50 z-10"></div>
-                
+
                 {/* 2. Heavy black gradient for ultra-clear text readability */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent md:bg-gradient-to-r md:from-black md:via-black/80 md:to-transparent z-10"></div>
             </div>
@@ -77,15 +77,13 @@ const IndexHome = () => {
                     >
                         {/* The added motto styled elegantly so it doesn't break mobile screens */}
                         <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-serif font-light text-slate-300 tracking-wide italic">
-                            To Keep your spine young & flexible
+                            Our Motto To Keep
                         </span>
-                        
+
                         {/* The punchy core headline */}
                         <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl block font-serif font-black italic text-white tracking-tight leading-[1.1] md:leading-[1.05]">
-                            Relieve Pain <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2DD4BF] to-[#0D9488]">
-                                Restore Mobility
-                            </span>
+                            Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2DD4BF] to-[#0D9488]">Spine young & flexible
+                                Relieve Pain</span> <br />Restore Mobility
                         </span>
                     </h1>
 

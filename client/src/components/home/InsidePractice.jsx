@@ -15,13 +15,12 @@ const InsidePractice = () => {
 
     // Array of your images for easy management
     const practiceImages = [
-        "/compassion/1.jpeg",
-        "/compassion/2.jpeg",
-        "/compassion/4.jpeg",
-        "/compassion/5.jpeg",
         "/compassion/6.jpeg",
+        "/compassion/1.jpeg",
+        "/compassion/5.jpeg",
         "/compassion/3.jpeg",
-        "/compassion/7.jpeg"
+        "/compassion/8.jpeg",
+        "/compassion/9.jpeg",
     ];
 
     // Helper to store image refs without duplication for GSAP staggering
@@ -59,7 +58,7 @@ const InsidePractice = () => {
                 { opacity: 0, y: 30 },
                 { opacity: 1, y: 0, stagger: 0.15, duration: 0.8, ease: "power3.out" }
             )
-                // 2. Stagger Reveal the Masonry Images
+                // 2. Stagger Reveal the Grid Images
                 .fromTo(imageRefs.current,
                     { opacity: 0, y: 40, scale: 0.95 },
                     { opacity: 1, y: 0, scale: 1, stagger: 0.1, duration: 0.8, ease: "back.out(1.2)" },
@@ -85,23 +84,26 @@ const InsidePractice = () => {
                     </div>
 
                     {/* =========================================
-                        DYNAMIC MASONRY GALLERY
+                        PERFECTLY SYMMETRICAL GRID
+                        Forces all images to conform to an exact 4:3 
+                        aspect ratio so the layout is totally flush.
                     ========================================= */}
-                    <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 md:gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
                         {practiceImages.map((src, index) => (
                             <div
                                 key={index}
                                 ref={addToImages}
                                 onClick={() => setSelectedImage(src)} // Open modal on click
-                                className="break-inside-avoid inline-block w-full mb-4 md:mb-6 relative rounded-[1.5rem] md:rounded-[2rem] overflow-hidden group shadow-sm bg-slate-100 cursor-pointer"
+                                className="relative w-full aspect-[4/3] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden group shadow-sm bg-slate-100 cursor-pointer"
                             >
                                 <img
                                     src={src}
                                     alt={`Practice Facility ${index + 1}`}
-                                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                                    // h-full and object-cover guarantee the image fills the 4:3 container perfectly
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                                 />
-                                {/* Optional: Hover overlay to indicate it's clickable */}
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 pointer-events-none"></div>
+                                {/* Hover overlay to indicate it's clickable */}
+                                <div className="absolute inset-0 bg-black/0 group-hover:bg-[#0A192F]/10 transition-colors duration-300 pointer-events-none"></div>
                             </div>
                         ))}
                     </div>

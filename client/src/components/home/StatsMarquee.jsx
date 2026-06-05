@@ -23,12 +23,12 @@ const StatsMarquee = () => {
         "MS ORTHOPAEDICS",
         "FRGUHS • SPINE SURGERY",
         "FELLOWSHIP • ENDOSCOPIC SPINE SURGERY",
-        "FELLOWSHIP • BARCELONA, SPAIN",
+        "FELLOWSHIP • Barcelona, Spain, Australia and South korea.",
         "TSMC: 35214",
         "MS ORTHOPAEDICS",
         "FRGUHS • SPINE SURGERY",
         "FELLOWSHIP • ENDOSCOPIC SPINE SURGERY",
-        "FELLOWSHIP • BARCELONA, SPAIN",
+        "FELLOWSHIP • Barcelona, Spain, Australia and South korea.",
         "TSMC: 35214"
     ];
 
@@ -50,7 +50,7 @@ const StatsMarquee = () => {
             label: "PATIENT SATISFACTION"
         },
         {
-            target: 3,
+            target: 6,
             suffix: "",
             label: "TOP HOSPITALS SERVED"
         }

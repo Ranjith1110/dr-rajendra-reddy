@@ -23,19 +23,19 @@ const ConditionsTreat = () => {
             desc: "Endoscopic discectomy for disc herniation with same-day recovery.",
             icon: <FiActivity size={16} />,
             // Using placeholder medical images matching the context
-            image: "/endoscopic/1.webp",
+            image: "/compassion/4.jpeg",
         },
         {
             title: "Sciatica",
             desc: "Targeted nerve decompression to relieve radiating leg pain.",
             icon: <FiShield size={16} />,
-            image: "/endoscopic/2.jpg",
+            image: "/compassion/7.jpeg",
         },
         {
             title: "Spinal Stenosis",
             desc: "Minimally invasive decompression to restore mobility.",
             icon: <FiZoomIn size={16} />,
-            image: "/endoscopic/3.webp",
+            image: "/compassion/2.jpeg",
         }
     ];
 

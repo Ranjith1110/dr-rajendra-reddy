@@ -36,7 +36,7 @@ const AboutDoctor = () => {
         "BSc, MBBS, MS (Orthopaedics) – Bangalore Medical College",
         "FRGUHS (Spine Surgery)",
         "Fellowship in Endoscopic Spine Surgery",
-        "Fellowship in Advanced Spine Surgery – Barcelona, Spain"
+        "Fellowship in Advanced Spine Surgery – Barcelona, Spain, Australia and South korea."
     ];
 
     const specialisations = [

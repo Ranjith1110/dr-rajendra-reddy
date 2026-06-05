@@ -19,21 +19,21 @@ const ProfessionalExperience = () => {
     // --- Content Data ---
     const hospitals = [
         {
-            role: "Consultant Endoscopic Spine Surgeon",
+            role: "Endoscopic Spine Surgeon",
             hospital: "SLG Hospitals",
             subText: "(Ajeenkya DY Patil Healthcare)",
             location: "Hyderabad, Telangana",
             gradient: "from-[#14B8A6] to-[#0D9488]"
         },
         {
-            role: "Consultant Endoscopic Spine Surgeon",
+            role: "Endoscopic Spine Surgeon",
             hospital: "Udai Omni Hospital",
             subText: "Advanced Orthopaedic Centre",
             location: "Hyderabad, Telangana",
             gradient: "from-[#0EA5E9] to-[#0284C7]"
         },
         {
-            role: "Visiting Consultant Endoscopic Spine Surgeon",
+            role: "Endoscopic Spine Surgeon",
             hospital: "KIMS Sunshine Hospital",
             subText: "Specialized Spine Care Unit",
             location: "Gachibowli, Hyderabad",
