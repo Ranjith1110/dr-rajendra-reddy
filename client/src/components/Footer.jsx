@@ -212,8 +212,8 @@ const Footer = () => {
 
                     <div className="text-slate-500 text-xs font-medium flex items-center gap-2">
                         Developed By
-                        <a href="#" className="text-white font-bold hover:text-[#14B8A6] transition-colors">
-                            Vigilixhub
+                        <a href="https://www.digi-via.com/" target='_blank' className="text-white font-bold hover:text-[#14B8A6] transition-colors">
+                            DigiVia
                         </a>
                     </div>
                 </div>

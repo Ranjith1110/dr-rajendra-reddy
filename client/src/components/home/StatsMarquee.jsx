@@ -40,7 +40,7 @@ const StatsMarquee = () => {
             label: "PROCEDURES PERFORMED"
         },
         {
-            target: 6,
+            target: 10,
             suffix: "+ yrs",
             label: "SPINE SPECIALTY PRACTICE"
         },
