@@ -179,7 +179,7 @@ const AboutHero = () => {
                         <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-[#14B8A6] mb-6">
                             <FiAward size={24} />
                         </div>
-                        <div className="text-4xl md:text-5xl font-serif mb-2">15<span className="text-[#14B8A6] font-sans font-black">+</span></div>
+                        <div className="text-4xl md:text-5xl font-serif mb-2">10<span className="text-[#14B8A6] font-sans font-black">+</span></div>
                         <div className="text-slate-400 text-xs md:text-sm font-bold uppercase tracking-widest leading-snug">
                             Years of <br /> Surgical Excellence
                         </div>
