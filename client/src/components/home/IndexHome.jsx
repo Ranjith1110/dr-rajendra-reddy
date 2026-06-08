@@ -82,7 +82,7 @@ const IndexHome = () => {
 
                         {/* The punchy core headline */}
                         <span className="text-[34px] md:text-6xl block font-serif font-black italic text-white tracking-tight leading-[1.1] md:leading-[1.05]">
-                           To Keep Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2DD4BF] to-[#0D9488]">Spine young & flexible by relieve Pain</span> and Restore Mobility
+                           To Keep Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2DD4BF] to-[#0D9488]">Spine Young & flexible by relieving pain</span> and restoring mobility
                         </span>
                     </h1>
 
