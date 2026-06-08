@@ -51,7 +51,7 @@ const AboutDoctor = () => {
             let mm = gsap.matchMedia();
 
             // --------------------------------------------------
-            // DESKTOP & TABLET ANIMATION (Sped up & Optimized)
+            // DESKTOP & TABLET ANIMATION
             // --------------------------------------------------
             mm.add("(min-width: 768px)", () => {
                 const getXOffset = () => {
@@ -69,8 +69,8 @@ const AboutDoctor = () => {
                     scrollTrigger: {
                         trigger: sectionRef.current,
                         start: "top top",
-                        end: "+=1600", // Slightly shorter scroll distance for a punchier feel
-                        scrub: 1, // Reduced scrub delay for more responsiveness
+                        end: "+=1600",
+                        scrub: 1,
                         pin: true,
                         anticipatePin: 1,
                         invalidateOnRefresh: true,
@@ -96,12 +96,12 @@ const AboutDoctor = () => {
                             y: 0,
                             scale: 1,
                             boxShadow: "0 20px 40px -10px rgba(10, 25, 47, 0.1)",
-                            duration: 1.0, // Sped up image settling
+                            duration: 1.0,
                             ease: "power3.inOut"
                         },
                         0
                     )
-                    // 3. Content fades in MUCH earlier (at 0.4s instead of 1.2s)
+                    // 3. Content fades in 
                     .fromTo(contentRef.current,
                         { autoAlpha: 0, x: 40 },
                         { autoAlpha: 1, x: 0, duration: 0.6, ease: "power3.out" },
@@ -141,14 +141,14 @@ const AboutDoctor = () => {
             });
 
             // --------------------------------------------------
-            // MOBILE ANIMATION (Sped up & Optimized)
+            // MOBILE ANIMATION
             // --------------------------------------------------
             mm.add("(max-width: 767px)", () => {
                 const tlMobile = gsap.timeline({
                     scrollTrigger: {
                         trigger: sectionRef.current,
                         start: "top top",
-                        end: "+=900", // Shorter scroll distance for quick mobile interaction
+                        end: "+=900",
                         scrub: 1,
                         pin: true,
                     }
@@ -168,6 +168,19 @@ const AboutDoctor = () => {
                     .fromTo(textRefs.current, { autoAlpha: 0, y: 15 }, { autoAlpha: 1, y: 0, stagger: 0.05, duration: 0.6 }, 0.5)
                     .fromTo(specRefs.current, { autoAlpha: 0, scale: 0.95 }, { autoAlpha: 1, scale: 1, stagger: 0.05, duration: 0.5 }, 0.6)
                     .fromTo(badgeRef.current, { autoAlpha: 0, scale: 0.8 }, { autoAlpha: 1, scale: 1, duration: 0.4, ease: "back.out" }, 0.7);
+
+                // FIXED: Added counter animation for Mobile!
+                const counterMobile = { val: 0 };
+                tlMobile.to(counterMobile, {
+                    val: 10,
+                    duration: 0.5,
+                    ease: "none",
+                    onUpdate: () => {
+                        if (experienceCountRef.current) {
+                            experienceCountRef.current.innerText = Math.ceil(counterMobile.val) + "+";
+                        }
+                    }
+                }, 0.5);
             });
 
         }, sectionRef);
